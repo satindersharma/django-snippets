@@ -5,7 +5,7 @@
 # if data insert or download in json
 
 // change this format
-
+```json
 [ 
 { 
 "id":1,
@@ -50,10 +50,12 @@
 "stateshort":"AN"
 }]
 
+```
 
 
 // to this
 // where searchapp is app name and India is model class name
+```json
 [ 
 {
     "model": "searchapp.India",
@@ -125,10 +127,15 @@
 }
 ]
 
+```
 
-// python manage.py dumpdata ConnectWithMYSQL.S1902000403 --indent 4 > table_data.json
+```shell
+python manage.py dumpdata ConnectWithMYSQL.S1902000403 --indent 4 > table_data.json
+```
 // after dowloading json  replace the model identifier in json file
-// python manage.py loaddata table_data.json --app ermapp.S1902000403
+```shell
+python manage.py loaddata table_data.json --app ermapp.S1902000403
+```
 
 
 
