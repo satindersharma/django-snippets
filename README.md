@@ -157,3 +157,17 @@ python manage.py inspectdb > models.py
 ```
 it create models by introspecting an existing database
 
+
+
+
+### Get instance of django form
+```python
+instance = getattr(self, 'instance', None)
+        if instance and instance.pk:
+            return instance.lead
+```
+### IF there is form error and want it in ajax
+```python
+errors = note_form.errors.as_json()
+return HttpResponse(errors, status=400, content_type='application/json')
+```
