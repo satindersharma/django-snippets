@@ -174,7 +174,7 @@ return HttpResponse(errors, status=400, content_type='application/json')
 
 
 ### The Django admin documentation generator
-https://docs.djangoproject.com/en/3.1/ref/contrib/admin/admindocs/
+
 
 ##### add app
 in `settings.py`
