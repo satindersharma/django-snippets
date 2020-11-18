@@ -176,14 +176,20 @@ return HttpResponse(errors, status=400, content_type='application/json')
 ### The Django admin documentation generator
 https://docs.djangoproject.com/en/3.1/ref/contrib/admin/admindocs/
 
+##### add app
+in `settings.py`
 Add `django.contrib.admindocs` to your INSTALLED_APPS.
 
+##### add url
+in 'urls.py`
 before /admin/
 ```python
 path('admin/doc/', include('django.contrib.admindocs.urls')) 
 ```
+
+##### Install package to see documentation
 ```python
 pip install docutils
 ```
-
+##### open admin panel
 Now you have a  ` DOCUMENTATION ` in admin panel
