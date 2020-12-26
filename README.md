@@ -193,3 +193,19 @@ pip install docutils
 ```
 ##### open admin panel
 Now you have a  ` DOCUMENTATION ` in admin panel
+
+
+
+
+
+# How to add form intial in django CBV
+
+### overwrite he get_initial method
+
+```python
+def get_initial(self, *args, **kwargs):
+    ''' initialize your's form values here '''
+    base_initial = self.initial.copy()
+    base_initial.update({'user': self.request.user})
+    return base_initial
+```
