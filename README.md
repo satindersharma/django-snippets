@@ -191,6 +191,11 @@ path('admin/doc/', include('django.contrib.admindocs.urls'))
 ```python
 pip install docutils
 ```
+##### Install python3-docutils
+```bash
+sudo apt install python3-docutils
+```
+
 ##### open admin panel
 Now you have a  ` DOCUMENTATION ` in admin panel
 
